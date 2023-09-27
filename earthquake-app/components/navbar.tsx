@@ -53,8 +53,7 @@ export const Navbar = () => {
 	);
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky" shouldHideOnScroll isBordered="false" className="my-4">
-			<div className="drop-shadow-sm flex container lg border border-solid rounded-2xl px-10 py-3 border-gray-400">
+		<NextUINavbar maxWidth="xl" position="sticky" shouldHideOnScroll isBordered="false" className="drop-shadow-sm">
 				<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 					<NavbarBrand as="li" className="gap-3 max-w-fit">
 						<NextLink className="flex justify-start items-center gap-1" href="/">
@@ -144,7 +143,6 @@ export const Navbar = () => {
 						))}
 					</div>
 				</NavbarMenu>
-			</div>
 		</NextUINavbar>
 	);
 };
